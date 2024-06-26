@@ -1,0 +1,30 @@
+{
+  "name": "cairo-tm-grammar",
+  "version": "2.6.4",
+  "description": "TextMate grammar for the Cairo language",
+  "private": true,
+  "type": "module",
+  "exports": "./index.mjs",
+  "scripts": {
+    "pull": "node ./bin/pull.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/software-mansion-labs/cairo-tm-grammar.git"
+  },
+  "keywords": [
+    "syntax-highlighting"
+  ],
+  "author": "Software Mansion",
+  "license": "Apache-2.0",
+  "contributes": {
+    "grammars": [
+      {
+        "language": "cairo",
+        "scopeName": "source.cairo",
+        "path": "./syntaxes/cairo.tmLanguage.json"
+      }
+    ]
+  }
+}
