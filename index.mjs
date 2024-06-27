@@ -1,2 +1,1 @@
-import cairo from "./syntaxes/cairo.tmLanguage.json" with {type: "json"};
-export default cairo;
+export {default} from "./syntaxes/cairo.tmLanguage.json" with {type: "json"};
