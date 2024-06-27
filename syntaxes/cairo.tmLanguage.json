@@ -1,5 +1,5 @@
 {
-  "credits": "This grammar is heavily modified Rust grammar from VSCode repository: https://github.com/microsoft/vscode/blob/11f415d4d77f7739c202905ccd02e27774146b75/extensions/rust/syntaxes/rust.tmLanguage.json",
+  "credits": "Pulled from: https://raw.githubusercontent.com/starkware-libs/cairo/main/vscode-cairo/syntaxes/cairo.tmLanguage.json. This grammar is heavily modified Rust grammar from VSCode repository: https://github.com/microsoft/vscode/blob/11f415d4d77f7739c202905ccd02e27774146b75/extensions/rust/syntaxes/rust.tmLanguage.json",
   "name": "Cairo",
   "scopeName": "source.cairo",
   "patterns": [

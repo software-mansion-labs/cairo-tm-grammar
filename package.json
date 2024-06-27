@@ -24,6 +24,14 @@
         "language": "cairo",
         "scopeName": "source.cairo",
         "path": "./syntaxes/cairo.tmLanguage.json"
+      },
+      {
+        "language": "cairo0",
+        "scopeName": "source.cairo0",
+        "path": "./syntaxes/cairo0.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.python": "source.python"
+        }
       }
     ]
   }
