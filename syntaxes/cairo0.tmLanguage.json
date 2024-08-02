@@ -1,6 +1,6 @@
 {
   "credits": "Pulled from: https://raw.githubusercontent.com/starkware-libs/cairo-lang/master/src/starkware/cairo/lang/ide/vscode-cairo/syntaxes/cairo.tmLanguage.json.",
-  "name": "Cairo 0",
+  "name": "Cairo Zero",
   "scopeName": "source.cairo0",
   "patterns": [
     {

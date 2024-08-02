@@ -6,7 +6,7 @@ const syntaxPath = packagePath("syntaxes/cairo.tmLanguage.json");
 const [syntax, syntaxSource] = await fetchJson("https://raw.githubusercontent.com/starkware-libs/cairo/main/vscode-cairo/syntaxes/cairo.tmLanguage.json");
 await writeJson(syntaxPath, withCredits(syntax, syntaxSource));
 
-// Pull Cairo 0 syntax.
+// Pull Cairo Zero syntax.
 const syntax0Path = packagePath("syntaxes/cairo0.tmLanguage.json");
 let [syntax0, syntax0Source] = await fetchJson("https://github.com/starkware-libs/cairo-lang/raw/master/src/starkware/cairo/lang/ide/vscode-cairo/syntaxes/cairo.tmLanguage.json");
 // Modify it to use `cairo0` name & scope name.
@@ -15,7 +15,7 @@ delete syntax0.$schema;
 delete syntax0.name;
 delete syntax0.scopeName;
 syntax0 = {
-  name: "Cairo 0",
+  name: "Cairo Zero",
   scopeName: "source.cairo0",
   ...syntax0
 };
