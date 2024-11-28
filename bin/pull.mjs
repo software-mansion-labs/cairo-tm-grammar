@@ -3,7 +3,7 @@ import {fileURLToPath} from "node:url";
 
 // Pull Cairo syntax.
 const syntaxPath = packagePath("syntaxes/cairo.tmLanguage.json");
-const [syntax, syntaxSource] = await fetchJson("https://raw.githubusercontent.com/starkware-libs/cairo/main/vscode-cairo/syntaxes/cairo.tmLanguage.json");
+const [syntax, syntaxSource] = await fetchJson("https://raw.githubusercontent.com/software-mansion/vscode-cairo/main/syntaxes/cairo.tmLanguage.json");
 await writeJson(syntaxPath, withCredits(syntax, syntaxSource));
 
 // Pull Cairo Zero syntax.
@@ -23,7 +23,7 @@ await writeJson(syntax0Path, withCredits(syntax0, syntax0Source));
 
 // Update package.json version.
 const packageJsonPath = packagePath("package.json");
-const [{version}] = await fetchJson("https://github.com/starkware-libs/cairo/raw/main/vscode-cairo/package.json");
+const [{version}] = await fetchJson("https://raw.githubusercontent.com/software-mansion/vscode-cairo/main/package.json");
 const origPackageJson = await readJson(packageJsonPath);
 const packageJson = {...origPackageJson, version};
 await writeJson(packageJsonPath, packageJson);

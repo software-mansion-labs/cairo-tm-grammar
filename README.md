@@ -5,4 +5,4 @@ It is machine-generated from the [Visual Studio Code extension for the Cairo lan
 source code.
 
 
-[vscode-cairo]: https://github.com/starkware-libs/cairo/tree/main/vscode-cairo
+[vscode-cairo]: https://github.com/software-mansion/vscode-cairo
